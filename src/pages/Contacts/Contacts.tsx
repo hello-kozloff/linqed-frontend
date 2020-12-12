@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page } from '../../components';
+import { Page, Container } from '../../components';
 
 export default function ContactsPage(): React.ReactElement {
   return (
@@ -9,18 +9,18 @@ export default function ContactsPage(): React.ReactElement {
           slug: 'buttons',
           title: 'Способы связи',
           component: (
-            <div>
+            <Container>
               <span>Способы связи</span>
-            </div>
+            </Container>
           )
         },
         {
           slug: 'links',
           title: 'Ссылки',
           component: (
-            <div>
+            <Container>
               <span>Ссылки</span>
-            </div>
+            </Container>
           )
         },
       ]}
