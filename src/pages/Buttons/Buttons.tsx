@@ -1,9 +1,9 @@
 import React from 'react';
 import { Page, Container } from '../../components';
 
-export default function ContactsPage(): React.ReactElement {
+export default function ButtonsPage(): React.ReactElement {
   return (
-    <Page title="Кнопки" layout="profile">
+    <Page title="Кнопки" layout="buttons">
       {[
         {
           slug: 'buttons',

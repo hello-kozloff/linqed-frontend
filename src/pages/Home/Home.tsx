@@ -26,7 +26,7 @@ export default function HomePage(): React.ReactElement {
                   <MenuButton to="/profile" icon={IconUser}>
                     Информация
                   </MenuButton>
-                  <MenuButton to="/contacts" icon={IconLink}>
+                  <MenuButton to="/buttons" icon={IconLink}>
                     Кнопки
                   </MenuButton>
                   <MenuButton icon={IconServices}>
