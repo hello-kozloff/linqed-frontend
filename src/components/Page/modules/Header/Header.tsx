@@ -20,6 +20,11 @@ export default function PageHeader(props: IPageHeaderProps): React.ReactElement 
           {props.title}
         </strong>
       </div>
+      {props.footer && (
+        <div className={pageHeader('footer')}>
+          {props.footer}
+        </div>
+      )}
     </header>
   );
 }
