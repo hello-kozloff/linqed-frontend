@@ -1,6 +1,6 @@
 import React from 'react';
 import { block } from 'bem-cn';
-import { PageHeader } from "./modules";
+import { PageHeader, PageTabProvider } from "./modules";
 import { IPageProps } from './types';
 import './styles.scss';
 
@@ -29,9 +29,7 @@ export default function Page(props: IPageProps): React.ReactElement {
       {props.title && (
         <div className={page('header')}>
           <PageHeader title={props.title} footer={props.children.length > 0 ? (
-            <div>
-              <span>Tab container</span>
-            </div>
+            <PageTabProvider slides={props.children} />
           ) : undefined} />
         </div>
       )}
