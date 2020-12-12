@@ -28,7 +28,7 @@ export default function Header(): React.ReactElement {
         </div>
         <div className={header('user')}>
           <Avatar
-            url="https://images.unsplash.com/photo-1506436718137-b21cd5c12e7a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=944&q=80"
+            url="http://fetbiko.ru/public/img/avatar.png"
             size={AvatarSize.Small}
           />
           <span className={header('username')}>
