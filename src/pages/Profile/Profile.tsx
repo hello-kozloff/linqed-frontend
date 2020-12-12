@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page, Container } from '../../components';
+import {Page, Container, UploadImage} from '../../components';
 
 export default function ProfilePage(): React.ReactElement {
   return (
@@ -10,7 +10,7 @@ export default function ProfilePage(): React.ReactElement {
           title: 'Профиль',
           component: (
             <Container>
-              <span>Hello world</span>
+              <UploadImage url="http://fetbiko.ru/public/img/avatar.png" />
             </Container>
           )
         },
