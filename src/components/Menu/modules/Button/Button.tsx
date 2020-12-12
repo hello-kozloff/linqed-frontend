@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { block } from 'bem-cn';
 import { IMenuButtonProps } from './types';
+import './styles.scss';
 
 /**
  * The component class generator.
@@ -17,13 +19,13 @@ export default function MenuButton(props: IMenuButtonProps): React.ReactElement 
   const { children: title } = props;
 
   return (
-    <button type="button" className={menuButton()}>
+    <Link to={props.to} className={menuButton()}>
       <div className={menuButton('icon')}>
         {props.icon}
       </div>
       <span className={menuButton('title')}>
         {title}
       </span>
-    </button>
+    </Link>
   );
 }
