@@ -6,6 +6,5 @@ export enum AvatarSize {
 
 export interface IAvatarProps {
   url: string;
-  alt: string;
   size: AvatarSize;
 }
