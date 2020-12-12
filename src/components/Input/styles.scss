@@ -1,7 +1,7 @@
 @import "../../scss/abstracts/variables";
 
 .input {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   position: relative;
   display: grid;
 }
@@ -15,6 +15,7 @@
   padding: 16px;
   line-height: 20px;
   font-family: inherit;
+  -webkit-appearance: none;
   font-size: inherit;
 }
 
@@ -26,7 +27,7 @@
   transition: .25s ease;
 
   &_collapsed {
-    transform: translateX(8px) translateY(-8px);
+    transform: translateX(10px) translateY(-6px);
     padding: 0 9px;
     letter-spacing: 0.03em;
     line-height: 16px;
