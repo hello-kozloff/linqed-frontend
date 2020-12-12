@@ -7,11 +7,11 @@ const pageTabProvider = block('page-tab-provider');
 export default function PageTabProvider(props: IPageTabProviderProps): React.ReactElement {
   function renderTabs(slides: IPageTabProviderProps['slides']): React.ReactNodeArray {
     return slides.map((slide) => (
-      <div className={pageTabProvider('tab')}>
+      <button type="button" className={pageTabProvider('tab')}>
         <span className={pageTabProvider('title')}>
           {slide.title}
         </span>
-      </div>
+      </button>
     ))
   }
 
