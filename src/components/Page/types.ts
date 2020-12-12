@@ -5,7 +5,7 @@ import {IPageHeaderProps} from "./modules/Header/types";
  * The page props interface.
  */
 export interface IPageProps {
-  title: IPageHeaderProps['title'];
+  title?: IPageHeaderProps['title'];
   layout: string;
   children: ReactNode | ReactNodeArray;
 }
