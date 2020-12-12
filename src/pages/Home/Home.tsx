@@ -15,10 +15,10 @@ export default function HomePage(): React.ReactElement {
   return (
     <Menu>
       <MenuGroup title="Основное">
-        <MenuButton to="/information" icon={IconUser}>
+        <MenuButton to="/profile" icon={IconUser}>
           Информация
         </MenuButton>
-        <MenuButton to="/buttons" icon={IconLink}>
+        <MenuButton to="/contacts" icon={IconLink}>
           Кнопки
         </MenuButton>
         <MenuButton to="/design" icon={IconServices}>
@@ -26,7 +26,7 @@ export default function HomePage(): React.ReactElement {
         </MenuButton>
       </MenuGroup>
       <MenuGroup title="Инструменты">
-        <MenuButton to="/information" icon={IconChart}>
+        <MenuButton to="/analytics" icon={IconChart}>
           Аналитика
         </MenuButton>
         <MenuButton icon={IconEvents}>
