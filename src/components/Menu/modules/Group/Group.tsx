@@ -23,9 +23,9 @@ export default function MenuGroup(props: IMenuGroupProps): React.ReactElement {
           {props.title}
         </h4>
       )}
-      <div className={menuGroup('grid')}>
+      <nav className={menuGroup('grid')}>
         {renderRows('menu-group', props.children)}
-      </div>
+      </nav>
     </div>
   );
 }
