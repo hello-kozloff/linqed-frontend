@@ -10,8 +10,8 @@ export default function ProfilePage(): React.ReactElement {
           title: 'Профиль',
           component: (
             <Container>
+              <UploadImage url="http://fetbiko.ru/public/img/avatar.png" />
               <Grid>
-                <UploadImage url="http://fetbiko.ru/public/img/avatar.png" />
                 <Input label="Имя" defaultValue="Даниил Фетисов" />
                 <Input label="Описание" defaultValue="Product Designer at Linqed.me" />
                 <Input label="Адрес страницы" defaultValue="linqed.me/fetchlab" />
