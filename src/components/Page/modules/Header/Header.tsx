@@ -2,6 +2,7 @@ import React from 'react';
 import { block } from 'bem-cn';
 import {IconChevronLeft} from '../../../../components/Icons';
 import {IPageHeaderProps} from "./types";
+import './styles.scss';
 
 /**
  * The component class generator.
