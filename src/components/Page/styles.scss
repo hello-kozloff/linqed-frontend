@@ -4,3 +4,13 @@
   row-gap: 24px;
   display: grid;
 }
+
+.page__content {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.page__slide {
+  flex-shrink: 0;
+  width: 100%;
+}

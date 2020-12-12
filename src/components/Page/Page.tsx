@@ -16,6 +16,14 @@ const page = block('page');
  * @constructor
  */
 export default function Page(props: IPageProps): React.ReactElement {
+  function renderSlides(slides: IPageProps['children']) {
+    return slides.map((slide, slideId) => (
+      <div key={slideId} className={page('slide')}>
+        {slide.component}
+      </div>
+    ));
+  }
+
   return (
     <div className={page({ layout: props.layout })}>
       {props.title && (
@@ -24,7 +32,7 @@ export default function Page(props: IPageProps): React.ReactElement {
         </div>
       )}
       <div className={page('content')}>
-        {props.children}
+        {renderSlides(props.children)}
       </div>
     </div>
   );
