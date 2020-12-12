@@ -1,6 +1,7 @@
 import React, { ReactNodeArray } from 'react';
 import { block } from 'bem-cn';
 import { IMenuGroupProps } from './types';
+import './styles.scss';
 
 /**
  * The component class generator.
