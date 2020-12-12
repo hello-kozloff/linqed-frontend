@@ -1,0 +1,24 @@
+@import "../../scss/abstracts/variables";
+
+.upload-image {
+  box-sizing: border-box;
+  padding: 0 16px 16px 16px;
+  column-gap: 16px;
+  align-items: center;
+  grid-template-columns: min-content max-content;
+  grid-auto-flow: column;
+  display: grid;
+}
+
+.upload-image__button {
+  text-align: left;
+  font-weight: 500;
+  font-family: inherit;
+  font-size: inherit;
+  color: $brand-800;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0;
+}
