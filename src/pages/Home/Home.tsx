@@ -13,7 +13,7 @@ import {
 
 export default function HomePage(): React.ReactElement {
   return (
-    <Page title="Профиль" layout="profile">
+    <Page layout="profile">
       {[
         {
           slug: 'profile',
