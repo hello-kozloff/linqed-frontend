@@ -1,0 +1,36 @@
+@import "../../../../scss/abstracts/variables";
+
+.page-tab-provider {
+  column-gap: 25px;
+  grid-auto-flow: column;
+  display: grid;
+}
+
+.page-tab-provider__tab {
+  position: relative;
+  box-sizing: border-box;
+  padding: 18px 6px 8px 6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  line-height: 22px;
+  font-family: inherit;
+  font-weight: 500;
+  color: $neutral-black-500;
+
+  &:after {
+    content: "";
+
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+
+    border-radius: 30px;
+    background-color: transparent;
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+  }
+}

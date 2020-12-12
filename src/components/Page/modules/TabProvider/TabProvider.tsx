@@ -1,6 +1,7 @@
 import React from 'react';
 import { block } from 'bem-cn';
 import {IPageTabProviderProps} from "./types";
+import './styles.scss';
 
 const pageTabProvider = block('page-tab-provider');
 
