@@ -16,7 +16,7 @@ const menuGroup = block('menu-group');
 export default function MenuGroup(props: IMenuGroupProps): React.ReactElement {
   function renderGroups(groups: ReactNodeArray) {
     return groups.map((group, groupId) => (
-      <div key={groupId} className={menuGroup('item')}>
+      <div key={groupId} className={menuGroup('row')}>
         {group}
       </div>
     ));
@@ -24,7 +24,14 @@ export default function MenuGroup(props: IMenuGroupProps): React.ReactElement {
 
   return (
     <div className={menuGroup()}>
-      {renderGroups(props.children)}
+      {props.title && (
+        <h4 className={menuGroup('title')}>
+          {props.title}
+        </h4>
+      )}
+      <div className={menuGroup('grid')}>
+        {renderGroups(props.children)}
+      </div>
     </div>
   );
 }
