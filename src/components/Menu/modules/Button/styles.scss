@@ -5,6 +5,7 @@
   box-sizing: border-box;
   padding: 14px 32px;
   outline: none;
+  transition: .25s ease-out;
   background-color: transparent;
   text-decoration: none;
   color: inherit;
@@ -35,6 +36,16 @@
 
     &:after {
       display: none;
+    }
+  }
+
+  &:not(.menu-button_disabled) {
+    &:hover, &:focus-visible {
+      background-color: $neutral-black-50;
+    }
+
+    &:active {
+      background-color: $neutral-black-100;
     }
   }
 }
