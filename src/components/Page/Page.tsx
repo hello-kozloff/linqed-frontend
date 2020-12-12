@@ -3,6 +3,7 @@ import { block } from 'bem-cn';
 import { PageHeader, PageTabProvider } from "./modules";
 import { IPageProps } from './types';
 import './styles.scss';
+import {IPageTabProviderProps} from "./modules/TabProvider/types";
 
 /**
  * The component class generator.
@@ -16,6 +17,8 @@ const page = block('page');
  * @constructor
  */
 export default function Page(props: IPageProps): React.ReactElement {
+  const [currentSlide] = React.useState<IPageTabProviderProps['currentSlide']>(props.children[0].slug);
+
   function renderSlides(slides: IPageProps['children']) {
     return slides.map((slide, slideId) => (
       <div key={slideId} className={page('slide')}>
@@ -29,7 +32,7 @@ export default function Page(props: IPageProps): React.ReactElement {
       {props.title && (
         <div className={page('header')}>
           <PageHeader title={props.title} footer={props.children.length > 0 ? (
-            <PageTabProvider slides={props.children} />
+            <PageTabProvider currentSlide={currentSlide} slides={props.children} />
           ) : undefined} />
         </div>
       )}

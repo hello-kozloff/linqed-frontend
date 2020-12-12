@@ -5,6 +5,7 @@ import {IPageHeaderProps} from "./modules/Header/types";
  * The slide interface.
  */
 export interface ISlide {
+  slug: string;
   title: string;
   component: ReactNode | ReactNodeArray;
 }

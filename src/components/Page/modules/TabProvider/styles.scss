@@ -33,4 +33,12 @@
     height: 2px;
     width: 100%;
   }
+
+  &_current {
+    &:after {
+      background-color: $brand-800;
+    }
+
+    color: $neutral-black-900;
+  }
 }
