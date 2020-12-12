@@ -2,6 +2,7 @@ import React from 'react';
 import { block } from 'bem-cn';
 import renderRows from "../Menu/utils/renderRows";
 import {IGridProps} from "./types";
+import './styles.scss';
 
 /**
  * The component class generator.
