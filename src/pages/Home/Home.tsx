@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page, Menu } from '../../components';
+import {Page, Menu, Header} from '../../components';
 import { MenuGroup, MenuButton } from "../../components/Menu/modules";
 import {
   IconUser,
@@ -19,33 +19,36 @@ export default function HomePage(): React.ReactElement {
           slug: 'profile',
           title: 'Профиль',
           component: (
-            <Menu>
-              <MenuGroup title="Основное">
-                <MenuButton to="/profile" icon={IconUser}>
-                  Информация
-                </MenuButton>
-                <MenuButton to="/contacts" icon={IconLink}>
-                  Кнопки
-                </MenuButton>
-                <MenuButton to="/design" icon={IconServices}>
-                  Оформление
-                </MenuButton>
-              </MenuGroup>
-              <MenuGroup title="Инструменты">
-                <MenuButton to="/analytics" icon={IconChart}>
-                  Аналитика
-                </MenuButton>
-                <MenuButton icon={IconEvents}>
-                  Виджет на сайт
-                </MenuButton>
-                <MenuButton icon={IconPhoto}>
-                  QR-конструктор
-                </MenuButton>
-                <MenuButton icon={IconComment}>
-                  Мессенджер
-                </MenuButton>
-              </MenuGroup>
-            </Menu>
+            <>
+              <Header />
+              <Menu>
+                <MenuGroup title="Основное">
+                  <MenuButton to="/profile" icon={IconUser}>
+                    Информация
+                  </MenuButton>
+                  <MenuButton to="/contacts" icon={IconLink}>
+                    Кнопки
+                  </MenuButton>
+                  <MenuButton to="/design" icon={IconServices}>
+                    Оформление
+                  </MenuButton>
+                </MenuGroup>
+                <MenuGroup title="Инструменты">
+                  <MenuButton to="/analytics" icon={IconChart}>
+                    Аналитика
+                  </MenuButton>
+                  <MenuButton icon={IconEvents}>
+                    Виджет на сайт
+                  </MenuButton>
+                  <MenuButton icon={IconPhoto}>
+                    QR-конструктор
+                  </MenuButton>
+                  <MenuButton icon={IconComment}>
+                    Мессенджер
+                  </MenuButton>
+                </MenuGroup>
+              </Menu>
+            </>
           )
         },
       ]}
