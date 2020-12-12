@@ -2,6 +2,7 @@ import React from 'react';
 import { block } from 'bem-cn';
 import { PageHeader } from "./modules";
 import { IPageProps } from './types';
+import './styles.scss';
 
 const page = block('page');
 
