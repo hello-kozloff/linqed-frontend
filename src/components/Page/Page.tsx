@@ -33,7 +33,7 @@ export default function Page(props: IPageProps): React.ReactElement {
     <div className={page({ layout: props.layout })}>
       {props.title && (
         <div className={page('header')}>
-          <PageHeader title={props.title} footer={props.children.length > 0 ? (
+          <PageHeader title={props.title} footer={props.children.length > 1 ? (
             <PageTabProvider
               currentSlide={currentSlide}
               slides={props.children}
