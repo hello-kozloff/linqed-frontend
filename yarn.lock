@@ -1662,6 +1662,13 @@
   dependencies:
     "@babel/types" "^7.3.0"
 
+"@types/bem-cn@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@types/bem-cn/-/bem-cn-3.0.0.tgz#9edbd68d13c47169eb627e8abc7387f520816aa9"
+  integrity sha512-mXi7cfni1LJUEa+CajGJ+XPpS4gbdXEcy3dL6PALN5FOFUZNy9gpT+J7z0A+MbHYtLxthaABgKj8N0uviSTUcg==
+  dependencies:
+    bem-cn "*"
+
 "@types/eslint@^7.2.4":
   version "7.2.5"
   resolved "https://registry.yarnpkg.com/@types/eslint/-/eslint-7.2.5.tgz#92172ecf490c2fce4b076739693d75f30376d610"
@@ -2763,6 +2770,11 @@ bcrypt-pbkdf@^1.0.0:
   integrity sha1-pDAdOJtqQ/m2f/PKEaP2Y342Dp4=
   dependencies:
     tweetnacl "^0.14.3"
+
+bem-cn@*, bem-cn@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/bem-cn/-/bem-cn-3.0.1.tgz#6c9e8d45d422d64f89dec16f9abd3af7fac6690b"
+  integrity sha512-kWC76a09vSk6cJXDYsH1erjxdBf856HTxl0IHOvYItSmBC6wQCsRCf9bmKR0hmeUDcUP5XPMr8MNXDgKbKJi0A==
 
 bfj@^7.0.2:
   version "7.0.2"
