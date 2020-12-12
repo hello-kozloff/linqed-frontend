@@ -1,10 +1,14 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HomePage } from "./pages";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Welcome to Linqed Frontend</h1>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" component={HomePage} />
+      </Switch>
+    </Router>
   );
 }
 
