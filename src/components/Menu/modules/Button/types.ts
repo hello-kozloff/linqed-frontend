@@ -8,4 +8,5 @@ export interface IMenuButtonProps {
   to: LinkProps['to'];
   icon: ReactNode;
   children: string;
+  disabled?: boolean;
 }

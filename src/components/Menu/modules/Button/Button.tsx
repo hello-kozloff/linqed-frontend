@@ -19,7 +19,7 @@ export default function MenuButton(props: IMenuButtonProps): React.ReactElement 
   const { children: title } = props;
 
   return (
-    <Link to={props.to} className={menuButton()}>
+    <Link to={props.to} className={menuButton({ disabled: props.disabled })}>
       <div className={menuButton('icon')}>
         {props.icon}
       </div>

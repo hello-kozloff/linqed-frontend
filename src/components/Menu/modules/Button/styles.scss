@@ -23,6 +23,20 @@
     height: 12px;
     width: 12px;
   }
+
+  &_disabled {
+    .menu-button__icon svg {
+      fill: $neutral-black-300;
+    }
+
+    .menu-button__title {
+      color: $neutral-black-300;
+    }
+
+    &:after {
+      display: none;
+    }
+  }
 }
 
 .menu-button__icon {
