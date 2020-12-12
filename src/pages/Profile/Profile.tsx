@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page } from '../../components';
+import { Page, Container } from '../../components';
 
 export default function ProfilePage(): React.ReactElement {
   return (
@@ -9,9 +9,9 @@ export default function ProfilePage(): React.ReactElement {
           slug: 'profile',
           title: 'Профиль',
           component: (
-            <div>
+            <Container>
               <span>Hello world</span>
-            </div>
+            </Container>
           )
         },
       ]}
