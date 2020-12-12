@@ -3,7 +3,7 @@ import { Page } from '../../components';
 
 export default function ProfilePage(): React.ReactElement {
   return (
-    <Page title="profile" layout="profile">
+    <Page title="Профиль" layout="profile">
       {[
         {
           slug: 'profile',
