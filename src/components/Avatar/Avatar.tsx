@@ -15,7 +15,7 @@ const avatar = block('avatar');
 export default function Avatar(props: IAvatarProps): React.ReactElement {
   return (
     <div className={avatar({ size: props.size })}>
-      <img src={props.url} alt={props.alt} className={avatar('image')} />
+      <img src={props.url} className={avatar('image')} />
     </div>
   );
 }
