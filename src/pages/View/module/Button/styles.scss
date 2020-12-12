@@ -1,0 +1,23 @@
+.view-button {
+  border-radius: 20px;
+  justify-content: center;
+  align-content: center;
+  display: grid;
+  height: 72px;
+  width: 72px;
+}
+
+.view-button_vk {
+  background: radial-gradient(100% 100% at 50% 0%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), #1E7BE5;
+  box-shadow: 0 6px 12px rgba(30, 123, 229, 0.15);
+}
+
+.view-button_telegram {
+  background: radial-gradient(100% 100% at 50% 0%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), #2CA5E0;
+  box-shadow: 0 6px 12px rgba(44, 165, 224, 0.15);
+}
+
+.view-button_behance {
+  background: radial-gradient(100% 100% at 50% 0%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), #1769FF;
+  box-shadow: 0 6px 12px rgba(23, 105, 255, 0.15);
+}
