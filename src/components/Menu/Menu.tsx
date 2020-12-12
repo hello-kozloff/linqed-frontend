@@ -1,4 +1,4 @@
-import React, {ReactNodeArray} from 'react';
+import React from 'react';
 import { block } from 'bem-cn';
 import { IMenuProps } from './types';
 import './styles.scss';
@@ -15,7 +15,7 @@ const menu = block('menu');
  * @constructor
  */
 export default function Menu(props: IMenuProps): React.ReactElement {
-  function renderGroups(groups: ReactNodeArray) {
+  function renderRows(groups: React.ReactNodeArray) {
     return groups.map((group, groupId) => (
       <div key={groupId} className={menu('row')}>
         {group}
@@ -25,7 +25,7 @@ export default function Menu(props: IMenuProps): React.ReactElement {
 
   return (
     <div className={menu()}>
-      {renderGroups(props.children)}
+      {renderRows(props.children)}
     </div>
   );
 }
