@@ -29,12 +29,12 @@ export default function HomePage(): React.ReactElement {
                   <MenuButton to="/contacts" icon={IconLink}>
                     Кнопки
                   </MenuButton>
-                  <MenuButton to="/design" icon={IconServices}>
+                  <MenuButton icon={IconServices}>
                     Оформление
                   </MenuButton>
                 </MenuGroup>
                 <MenuGroup title="Инструменты">
-                  <MenuButton to="/analytics" icon={IconChart}>
+                  <MenuButton icon={IconChart}>
                     Аналитика
                   </MenuButton>
                   <MenuButton icon={IconEvents}>
