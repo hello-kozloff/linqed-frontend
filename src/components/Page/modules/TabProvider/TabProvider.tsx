@@ -8,7 +8,11 @@ const pageTabProvider = block('page-tab-provider');
 export default function PageTabProvider(props: IPageTabProviderProps): React.ReactElement {
   function renderTabs(slides: IPageTabProviderProps['slides']): React.ReactNodeArray {
     return slides.map((slide) => (
-      <button type="button" className={pageTabProvider('tab', { current: props.currentSlide === slide.slug })}>
+      <button
+        type="button"
+        className={pageTabProvider('tab', { current: props.currentSlide === slide.slug })}
+        onClick={() => props.onChange(slide.slug)}
+      >
         <span className={pageTabProvider('title')}>
           {slide.title}
         </span>

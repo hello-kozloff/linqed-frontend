@@ -17,14 +17,16 @@ const page = block('page');
  * @constructor
  */
 export default function Page(props: IPageProps): React.ReactElement {
-  const [currentSlide] = React.useState<IPageTabProviderProps['currentSlide']>(props.children[0].slug);
+  const [currentSlide, setCurrentSlide] = React.useState<IPageTabProviderProps['currentSlide']>(props.children[0].slug);
 
   function renderSlides(slides: IPageProps['children']) {
-    return slides.map((slide, slideId) => (
-      <div key={slideId} className={page('slide')}>
-        {slide.component}
-      </div>
-    ));
+    return slides.map((slide, slideId) => {
+      return slide.slug === currentSlide && (
+        <div key={slideId} className={page('slide')}>
+          {slide.component}
+        </div>
+      );
+    });
   }
 
   return (
@@ -32,7 +34,11 @@ export default function Page(props: IPageProps): React.ReactElement {
       {props.title && (
         <div className={page('header')}>
           <PageHeader title={props.title} footer={props.children.length > 0 ? (
-            <PageTabProvider currentSlide={currentSlide} slides={props.children} />
+            <PageTabProvider
+              currentSlide={currentSlide}
+              slides={props.children}
+              onChange={(slug) => setCurrentSlide(slug)}
+            />
           ) : undefined} />
         </div>
       )}
