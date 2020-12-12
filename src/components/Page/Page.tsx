@@ -28,7 +28,11 @@ export default function Page(props: IPageProps): React.ReactElement {
     <div className={page({ layout: props.layout })}>
       {props.title && (
         <div className={page('header')}>
-          <PageHeader title={props.title} />
+          <PageHeader title={props.title} footer={props.children.length > 0 ? (
+            <div>
+              <span>Tab container</span>
+            </div>
+          ) : undefined} />
         </div>
       )}
       <div className={page('content')}>
