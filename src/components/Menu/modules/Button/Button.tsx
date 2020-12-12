@@ -18,14 +18,26 @@ const menuButton = block('menu-button');
 export default function MenuButton(props: IMenuButtonProps): React.ReactElement {
   const { children: title } = props;
 
-  return (
-    <Link to={props.to} className={menuButton({ disabled: props.disabled })}>
-      <div className={menuButton('icon')}>
-        {props.icon}
-      </div>
-      <span className={menuButton('title')}>
+  function renderContent(): React.ReactElement {
+    return (
+      <>
+        <div className={menuButton('icon')}>
+          {props.icon}
+        </div>
+        <span className={menuButton('title')}>
         {title}
       </span>
+      </>
+    )
+  }
+
+  return !props.to ? (
+    <div className={menuButton({ disabled: true })}>
+      {renderContent()}
+    </div>
+  ) : (
+    <Link to={props.to} className={menuButton()}>
+      {renderContent()}
     </Link>
   );
 }
