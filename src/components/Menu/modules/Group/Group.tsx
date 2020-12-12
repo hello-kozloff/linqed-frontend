@@ -1,6 +1,7 @@
 import React from 'react';
 import { block } from 'bem-cn';
 import { IMenuGroupProps } from './types';
+import renderRows from '../../utils/renderRows';
 import './styles.scss';
 
 /**
@@ -15,14 +16,6 @@ const menuGroup = block('menu-group');
  * @constructor
  */
 export default function MenuGroup(props: IMenuGroupProps): React.ReactElement {
-  function renderRows(groups: React.ReactNodeArray) {
-    return groups.map((group, groupId) => (
-      <div key={groupId} className={menuGroup('row')}>
-        {group}
-      </div>
-    ));
-  }
-
   return (
     <div className={menuGroup()}>
       {props.title && (
@@ -31,7 +24,7 @@ export default function MenuGroup(props: IMenuGroupProps): React.ReactElement {
         </h4>
       )}
       <div className={menuGroup('grid')}>
-        {renderRows(props.children)}
+        {renderRows('menu-group', props.children)}
       </div>
     </div>
   );
