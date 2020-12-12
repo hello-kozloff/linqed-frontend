@@ -2,11 +2,11 @@
 
 .page-tab-provider {
   column-gap: 25px;
-  grid-auto-flow: column;
-  display: grid;
+  display: flex;
 }
 
 .page-tab-provider__tab {
+  width: 100%;
   position: relative;
   box-sizing: border-box;
   padding: 18px 6px 8px 6px;
