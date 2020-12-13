@@ -8,6 +8,12 @@
   min-height: 100vh;
   height: 100%;
   width: 100%;
+
+  @media screen and (min-width: calc(768px +  1px)) {
+    align-items: center;
+    padding: 24px 0;
+    box-sizing: border-box;
+  }
 }
 
 .view-page__container {
@@ -28,6 +34,10 @@
   background-color: #fff;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+
+  @media screen and (min-width: calc(768px +  1px)) {
+    border-radius: 12px;
+  }
 }
 
 .view-page__avatar {
