@@ -8,12 +8,6 @@
   min-height: 100vh;
   height: 100%;
   width: 100%;
-
-  &_with-button {
-    .view-page__box {
-      padding-bottom: 150px;
-    }
-  }
 }
 
 .view-page__container {
@@ -27,7 +21,7 @@
   align-content: flex-start;
   display: grid;
   box-sizing: border-box;
-  padding: 64px 32px 68px 32px;
+  padding: 64px 32px 150px 32px;
   background-color: #fff;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;

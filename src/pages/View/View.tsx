@@ -17,12 +17,8 @@ const viewPage = block('view-page');
  * @constructor
  */
 export default function ViewPage(): React.ReactElement {
-  React.useEffect(() => {
-    document.body.style.backgroundColor = '#006AFF';
-  }, []);
-
   return (
-    <div className={viewPage({ 'with-button': true })}>
+    <div style={{ backgroundColor: '#006AFF' }} className={viewPage()}>
       <div className={viewPage('container')}>
         <div className={viewPage('box')}>
           <div className={viewPage('avatar')}>
