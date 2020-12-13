@@ -8,6 +8,12 @@
   font-weight: 700;
   font-size: 17px;
   color: #fff;
+  transition: .25s ease-out;
+  outline: none;
   background-color: $brand-800;
   border-radius: 8px;
+
+  &:focus-within {
+    box-shadow: 0 0 0 4px rgba($brand-800, .25);
+  }
 }
