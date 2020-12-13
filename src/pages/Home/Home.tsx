@@ -1,5 +1,5 @@
 import React from 'react';
-import {Page, Menu, Header} from '../../components';
+import {Page, Menu, Header, Button} from '../../components';
 import { MenuGroup, MenuButton } from "../../components/Menu/modules";
 import {
   IconUser,
@@ -48,6 +48,9 @@ export default function HomePage(): React.ReactElement {
                   </MenuButton>
                 </MenuGroup>
               </Menu>
+              <Button to="/view">
+                <span>Предпросмотр визитки</span>
+              </Button>
             </>
           )
         },
