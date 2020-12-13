@@ -5,15 +5,27 @@ body {
   background-color: $brand-800;
 }
 
+.view-page {
+  box-sizing: border-box;
+  padding-top: 12px;
+  align-items: flex-end;
+  display: grid;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+}
+
+.view-page__container {
+  position: relative;
+  padding-top: calc(48px);
+}
+
 .view-page__box {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  box-shadow: 0 0 125px 4px rgba(#000, .1);
   align-content: center;
   display: grid;
   box-sizing: border-box;
-  padding: 64px 32px 145px 32px;
+  padding: 64px 32px 48px 32px;
   background-color: #fff;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -21,7 +33,7 @@ body {
 
 .view-page__avatar {
   position: absolute;
-  bottom: calc(100% - 48px);
+  top: 0;
   left: 0;
   right: 0;
   margin: auto;
