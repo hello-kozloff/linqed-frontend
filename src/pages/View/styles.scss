@@ -92,3 +92,12 @@
   font-size: 13px;
   color: $neutral-black-700;
 }
+
+.view-page__button {
+  left: 16px;
+  right: 16px;
+  bottom: 24px;
+  position: absolute;
+  text-align: center;
+  display: grid;
+}
