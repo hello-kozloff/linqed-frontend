@@ -13,7 +13,7 @@ body {
   align-content: center;
   display: grid;
   box-sizing: border-box;
-  padding: 64px 32px 32px 32px;
+  padding: 64px 32px 145px 32px;
   background-color: #fff;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -65,6 +65,11 @@ body {
   justify-content: center;
   grid-auto-flow: column;
   display: flex;
+}
+
+.view-page__links {
+  row-gap: 8px;
+  display: grid;
 }
 
 .view-page__copyright {
