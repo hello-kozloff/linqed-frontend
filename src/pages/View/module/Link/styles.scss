@@ -5,10 +5,16 @@
   grid-template-columns: max-content 1fr;
   grid-auto-flow: column;
   display: inline-grid;
+  outline: none;
+  transition: .25s ease-out;
   text-decoration: none;
   border-radius: 8px;
   border: 1px solid #E1EBFA;
   height: 56px;
+
+  &:focus-within {
+    box-shadow: 0 0 0 4px rgba(#E1EBFA, .45);
+  }
 }
 
 .view-link__emoji {
