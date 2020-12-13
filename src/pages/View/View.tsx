@@ -1,6 +1,6 @@
 import React from 'react';
 import {block} from 'bem-cn';
-import {Avatar} from "../../components";
+import {Avatar, Button} from "../../components";
 import {AvatarSize} from "../../components/Avatar/types";
 import {ViewButton,ViewLink} from "./module";
 import {ViewButtonType} from "./module/Button/types";
@@ -49,6 +49,11 @@ export default function ViewPage(): React.ReactElement {
             <span className={viewPage('copyright')}>
             Создай такую же страницу на <a href="https://www.linqed.me" target="_blank" rel="noreferrer">linqed.me</a> 🚀
           </span>
+          </div>
+          <div className={viewPage('button')}>
+            <Button to="/">
+              <span>В редактор</span>
+            </Button>
           </div>
         </div>
       </div>
