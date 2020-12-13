@@ -2,7 +2,7 @@ import React from 'react';
 import {block} from 'bem-cn';
 import {Avatar} from "../../components";
 import {AvatarSize} from "../../components/Avatar/types";
-import {ViewButton} from "./module";
+import {ViewButton,ViewLink} from "./module";
 import {ViewButtonType} from "./module/Button/types";
 import './styles.scss';
 
@@ -38,7 +38,8 @@ export default function ViewPage(): React.ReactElement {
             <ViewButton url="#" type={ViewButtonType.behance} />
           </div>
           <div className={viewPage('links')}>
-
+            <ViewLink emoji="🔥" title="Мой Линкед" />
+            <ViewLink emoji="🚀" title="Блог в Telegram" />
           </div>
           <span className={viewPage('copyright')}>
             Создай такую же страницу на <a href="https://www.linqed.me" target="_blank" rel="noreferrer">linqed.me</a> 🚀
