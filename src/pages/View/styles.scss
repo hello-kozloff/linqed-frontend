@@ -1,0 +1,76 @@
+@import "../../scss/abstracts/variables";
+
+body {
+  position: relative;
+  background-color: $brand-800;
+}
+
+.view-page__box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-content: center;
+  display: grid;
+  box-sizing: border-box;
+  padding: 64px 32px 32px 32px;
+  background-color: #fff;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.view-page__avatar {
+  position: absolute;
+  bottom: calc(100% - 48px);
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 4px solid #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  height: 96px;
+  width: 96px;
+
+  .avatar {
+    border-radius: 0;
+    transform: scale(1.1);
+  }
+}
+
+.view-page__content {
+  row-gap: 36px;
+  display: grid;
+}
+
+.view-page__information {
+  text-align: center;
+  row-gap: 8px;
+  display: grid;
+}
+
+.view-page__username {
+  line-height: 28px;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.view-page__description {
+  line-height: 22px;
+  color: $neutral-black-700;
+}
+
+.view-page__buttons {
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-auto-flow: column;
+  display: flex;
+}
+
+.view-page__copyright {
+  text-align: center;
+  letter-spacing: -0.05px;
+  line-height: 18px;
+  font-size: 13px;
+  color: $neutral-black-700;
+}

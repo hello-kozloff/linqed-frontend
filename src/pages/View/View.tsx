@@ -4,6 +4,7 @@ import {Avatar} from "../../components";
 import {AvatarSize} from "../../components/Avatar/types";
 import {ViewButton} from "./module";
 import {ViewButtonType} from "./module/Button/types";
+import './styles.scss';
 
 /**
  * The component class generator.
