@@ -43,7 +43,7 @@ export default function ViewPage(): React.ReactElement {
               <ViewLink emoji="🚀" title="Блог в Telegram" />
             </div>
             <span className={viewPage('copyright')}>
-              Создай такую же страницу на <a href="https://www.linqed.me" target="_blank" rel="noreferrer">linqed.me</a> 🚀
+              Создай такую же страницу на <a href="https://www.linqed.me" target="_blank" rel="noreferrer" className="link">linqed.me</a> 🚀
             </span>
           </div>
           <div className={viewPage('button')}>
