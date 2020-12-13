@@ -1,0 +1,13 @@
+@import "../../scss/abstracts/variables";
+
+.button {
+  display: inline-grid;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  line-height: 17px;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  background-color: $brand-800;
+  border-radius: 8px;
+}
