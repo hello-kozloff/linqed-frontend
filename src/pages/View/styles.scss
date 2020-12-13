@@ -1,18 +1,19 @@
 @import "../../scss/abstracts/variables";
 
-body {
-  position: relative;
-  background-color: $brand-800;
-}
-
 .view-page {
   box-sizing: border-box;
-  padding-top: 12px;
+  padding-top: 100px;
   align-items: flex-end;
   display: grid;
   min-height: 100vh;
   height: 100%;
   width: 100%;
+
+  &_with-button {
+    .view-page__box {
+      padding-bottom: 150px;
+    }
+  }
 }
 
 .view-page__container {
@@ -21,11 +22,12 @@ body {
 }
 
 .view-page__box {
+  height: 100%;
   box-shadow: 0 0 125px 4px rgba(#000, .1);
-  align-content: center;
+  align-content: flex-start;
   display: grid;
   box-sizing: border-box;
-  padding: 64px 32px 48px 32px;
+  padding: 64px 32px 68px 32px;
   background-color: #fff;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -72,7 +74,6 @@ body {
 }
 
 .view-page__buttons {
-  gap: 16px;
   flex-wrap: wrap;
   justify-content: center;
   grid-auto-flow: column;

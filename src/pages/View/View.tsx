@@ -18,7 +18,7 @@ const viewPage = block('view-page');
  */
 export default function ViewPage(): React.ReactElement {
   return (
-    <div className={viewPage()}>
+    <div className={viewPage({ 'with-button': true })}>
       <div className={viewPage('container')}>
         <div className={viewPage('box')}>
           <div className={viewPage('avatar')}>
