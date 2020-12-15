@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/linqed-frontend/static/css/main.109aa3a2.chunk.css",
+    "main.js": "/linqed-frontend/static/js/main.89447b83.chunk.js",
+    "main.js.map": "/linqed-frontend/static/js/main.89447b83.chunk.js.map",
+    "runtime-main.js": "/linqed-frontend/static/js/runtime-main.b2d95f91.js",
+    "runtime-main.js.map": "/linqed-frontend/static/js/runtime-main.b2d95f91.js.map",
+    "static/js/2.e75ab5cf.chunk.js": "/linqed-frontend/static/js/2.e75ab5cf.chunk.js",
+    "static/js/2.e75ab5cf.chunk.js.map": "/linqed-frontend/static/js/2.e75ab5cf.chunk.js.map",
+    "static/js/3.ac5c3335.chunk.js": "/linqed-frontend/static/js/3.ac5c3335.chunk.js",
+    "static/js/3.ac5c3335.chunk.js.map": "/linqed-frontend/static/js/3.ac5c3335.chunk.js.map",
+    "index.html": "/linqed-frontend/index.html",
+    "static/css/main.109aa3a2.chunk.css.map": "/linqed-frontend/static/css/main.109aa3a2.chunk.css.map",
+    "static/js/2.e75ab5cf.chunk.js.LICENSE.txt": "/linqed-frontend/static/js/2.e75ab5cf.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b2d95f91.js",
+    "static/js/2.e75ab5cf.chunk.js",
+    "static/css/main.109aa3a2.chunk.css",
+    "static/js/main.89447b83.chunk.js"
+  ]
+}
